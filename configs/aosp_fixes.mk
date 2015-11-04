@@ -32,8 +32,8 @@ PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 endif
 
-# Camera Effects for devices without a vendor partition
-ifneq ($(filter nexus_deb nexus_hammerhead nexus_flo nexus_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter nexus_hammerhead nexus_mako nexus_flo nexus_shamu,$(TARGET_PRODUCT)),)
+# Camera Effects
 PRODUCT_COPY_FILES +=  \
     vendor/nexus/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     vendor/nexus/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
