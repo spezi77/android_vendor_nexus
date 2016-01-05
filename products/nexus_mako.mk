@@ -12,11 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include Pure Nexus common configuration
-include vendor/nexus/main.mk
-
 # Include Pure Nexus telephony configuration
-include vendor/nexus/configs/telephony.mk
+include vendor/nexus/configs/nexus_phone.mk
 
 # Inherit AOSP device configuration for mako
 $(call inherit-product, device/lge/mako/full_mako.mk)
